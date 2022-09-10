@@ -1,0 +1,18 @@
+pipeline {
+  environment {
+    arg1 = 123
+  }
+  agent any
+  stages {
+    stage('Concat string') {
+      steps {
+        script {
+          String keyVar = "${env.arg1}_version-tag";
+          // echo keyVar
+          def map = [keyVar:"567"]
+          echo map.keyVar
+        }
+      }
+    }
+  }
+}
