@@ -1,0 +1,7 @@
+.cache/
+.java/
+nodes/
+updates/
+plugins/
+war/
+*.key
